@@ -1,0 +1,30 @@
+{
+  "name": "standnote",
+  "version": "1.0.0",
+  "description": "StandNote is your easy to use online meeting assistant that backs you up with automated meeting minutes for every conversation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@clerk/chrome-extension": "^1.0.0",
+    "@lottiefiles/lottie-player": "latest",
+    "microsoft-cognitiveservices-speech-sdk": "^1.32.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajat2502/StandNote.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "meeting-notes",
+    "speech-to-text",
+    "azure-cognitive-services"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajat2502/StandNote/issues"
+  },
+  "homepage": "https://github.com/rajat2502/StandNote#readme"
+}

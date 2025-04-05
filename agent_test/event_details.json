@@ -1,0 +1,13 @@
+{
+    "event_type": "conference",
+    "attendees": 5,
+    "speakers": [
+        {
+            "name": "bhavya",
+            "topic": "agenda for today",
+            "bio": "an expert in the field of ai"
+        }
+    ],
+    "need_sponsorship": true,
+    "networking_requirements": "None"
+}

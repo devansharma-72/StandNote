@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "key": "mnlpghekblinohfbojnhfckdfmikanja",
+  "name": "StandNote",
+  "version": "1.0.0",
+  "description": "StandNote is your easy to use online meeting assistant that backs you up with automated meeting minutes for every conversation.",
+  "short_name": "StandNote",
+
+  "icons": {
+    "128": "assets/icon128.png",
+    "48": "assets/icon48.png",
+    "16": "assets/icon16.png"
+  },
+
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": "assets/icon48.png"
+  },
+
+  "background": {
+    "service_worker": "javascript/eventPage.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["javascript/content.js"],
+      "css": ["css/content.css"]
+    }
+  ],
+
+  "web_accessible_resources": [{
+    "resources": ["assets/*"],
+    "matches": ["<all_urls>"]
+  }],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "tabCapture",
+    "identity"
+  ],
+
+  "host_permissions": [
+    "<all_urls>",
+    "https://*.clerk.com/*"
+  ]
+}
